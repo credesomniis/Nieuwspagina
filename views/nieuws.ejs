@@ -1,0 +1,28 @@
+<% include header %>
+
+
+<h1 class="goback"><a href="/">NIEUWS</a></h1>
+
+
+<section>
+
+    <h2 class="nieuwstitel">
+      <a href=/items/<%- item.id %>><%- item.titel %></a>
+    </h2>
+    <img src="/img/<%- item.afbeeldingl %>" class="images" alt="<%- item.titel %>">
+
+    <p class="datum"><%- item.datum %></p>
+
+    <p class="bodytext">
+      <%- item.body %>
+    </p>
+
+    <p class="gepostin">Gepost in categorieën:
+
+      <% for (var i = 0; i < item.categorieen.length; i++) { %>
+        <a href="/categorieen/<%- i %>"><%- item.categorieen[i] %></a><% if (i+1< item.categorieen.length){ %>, <% } %>
+      <% } %>
+    </p>
+</section>
+
+<% include footer %>

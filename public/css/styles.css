@@ -1,0 +1,141 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: 25px auto;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 6vw;
+  color: tomato;
+  margin-top:1em;
+  font-family: 'Abril Fatface', cursive;
+}
+
+nav {
+  border-bottom:5px solid tomato;
+  margin: 50px 0;
+  margin-bottom:5em;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 5px;
+  text-decoration: none;
+  color:black;
+  padding:5px;
+  font-weight: 900;
+  font-size: 1.5vw;
+}
+
+nav a:hover {
+  text-decoration:line-through;
+  color:tomato;
+}
+
+.nieuwstitel {
+  max-width:50%;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.nieuwstitel a {
+  color: black;
+  text-decoration:none;
+  font-weight: 900;
+  font-size: 4vw;
+  line-height: 1.1em;
+}
+
+.nieuwstitel a:hover {
+  text-decoration: line-through;
+  color: tomato;
+}
+
+.images {
+  width:80%;
+  position:relative;
+}
+
+img {
+  position:absolute;
+  top:-10em;
+  left: 14em;
+  z-index:-1;
+}
+
+.datum {
+  color:grey;
+  font-size:1vw;
+  position: relative;
+  top:-43em;
+}
+
+.samenvatting {
+  position: relative;
+  top:-26em;
+  left: 10em;
+  width:30%;
+  font-weight: 900;
+  line-height: 1.6em;
+  font-size: 1.4vw;
+  border-bottom: 5px solid tomato;
+}
+
+
+
+
+
+
+
+
+
+
+.goback {
+  margin-bottom:2em;
+
+}
+
+.goback a {
+  text-decoration:none;
+  color:black;
+}
+
+.goback a:hover {
+  text-decoration:line-through;
+  color:tomato;
+}
+
+.bodytext {
+  margin-top:-10em;
+}
+
+.gepostin {
+  color: grey;
+  margin-top: 3em;
+  font-size:1vw;
+  margin-bottom:5em;
+}
+
+.gepostin a {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.gepostin a:hover {
+  color: tomato;
+  text-decoration: line-through;
+}
+
+
+
+
+
+.itemsvoor {
+  margin-top:-6em;
+  color: tomato;
+  font-weight: 900;
+  font-size:2vw;
+  float:right;
+
+}
