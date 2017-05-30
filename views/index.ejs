@@ -1,6 +1,6 @@
 <% include header %>
 
-<h1>NIEUWS</h1>
+<h1>MOTI</h1>
 
 <nav>
   <% for (var i = 0; i < categorieen.length; i++) { %>
@@ -8,20 +8,25 @@
   <% } %>
 </nav>
 
+<form action="/" method="get" target="_blank">
+  <input type="text" placeholder="search" name="name"><input type="submit" value="Submit">
+</form>
 
   <% var teller = 1; %>
   <% nieuws.forEach(function(item){ %>
+    <div class="div">
     <section>
         <h2 class="nieuwstitel">
-          <a href=/items/<%- item.id %>><%- item.titel %></a>
+          <%- item.titel %>
         </h2>
-        <img src="/img/<%- item.afbeeldings %>" class="images" alt="<%- item.titel %>">
+        <a href=/items/<%- item.id %>><img src="/img/<%- item.afbeeldings %>" class="images" alt="<%- item.titel %>"></a>
         <p class="datum"><%- item.datum %></p>
 
         <p class="samenvatting">
           <%- item.samenvatting %>
         </p>
     </section>
+  </div>
     <% teller++;}); %>
 
 <% include footer %>

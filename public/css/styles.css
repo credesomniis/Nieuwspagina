@@ -1,4 +1,4 @@
-body {
+  body {
   font-family: 'Roboto', sans-serif;
   width: 90%;
   margin: 25px auto;
@@ -6,16 +6,18 @@ body {
 }
 
 h1 {
-  font-size: 6vw;
-  color: tomato;
-  margin-top:1em;
+  font-size: 30vw;
+  text-align: center;
+  color: yellow;
+  margin-top:0.5em;
   font-family: 'Abril Fatface', cursive;
 }
 
 nav {
-  border-bottom:5px solid tomato;
+  border-bottom:5px solid yellow;
   margin: 50px 0;
-  margin-bottom:5em;
+  margin-bottom:1em;
+  text-align: center;
 }
 
 nav a {
@@ -23,62 +25,65 @@ nav a {
   margin-right: 5px;
   text-decoration: none;
   color:black;
-  padding:5px;
+  padding:1em;
   font-weight: 900;
-  font-size: 1.5vw;
+  font-size: 5vw;
 }
 
 nav a:hover {
   text-decoration:line-through;
-  color:tomato;
+  color:yellow;
+}
+
+input {
+  width:80%;
+  margin-bottom:4em;
+}
+
+
+input[type=submit] {
+  width:15%;
+  margin-left:1em;
 }
 
 .nieuwstitel {
-  max-width:50%;
   font-family: 'Abril Fatface', cursive;
+  margin-bottom:0.5em;
 }
 
-.nieuwstitel a {
+.nieuwstitel {
   color: black;
   text-decoration:none;
   font-weight: 900;
-  font-size: 4vw;
-  line-height: 1.1em;
-}
-
-.nieuwstitel a:hover {
-  text-decoration: line-through;
-  color: tomato;
+  font-size: 8vw;
+  line-height: 1.4em;
+  text-decoration:overline;
 }
 
 .images {
-  width:80%;
-  position:relative;
+  max-width:100%;
 }
 
-img {
-  position:absolute;
-  top:-10em;
-  left: 14em;
-  z-index:-1;
+.images:hover{
+  border:10px solid yellow;
+  opacity:0.5;
+}
+
+section {
+  margin-bottom:6em;
 }
 
 .datum {
   color:grey;
-  font-size:1vw;
-  position: relative;
-  top:-43em;
+  font-size:3vw;
 }
 
 .samenvatting {
-  position: relative;
-  top:-26em;
-  left: 10em;
-  width:30%;
   font-weight: 900;
-  line-height: 1.6em;
-  font-size: 1.4vw;
-  border-bottom: 5px solid tomato;
+  line-height: 1.5em;
+  font-size: 4vw;
+  border-bottom: 5px solid yellow;
+  color:black;
 }
 
 
@@ -91,7 +96,7 @@ img {
 
 
 .goback {
-  margin-bottom:2em;
+  margin-bottom:1em;
 
 }
 
@@ -102,55 +107,60 @@ img {
 
 .goback a:hover {
   text-decoration:line-through;
-  color:tomato;
+  color:yellow;
 }
 
-.bodytext {
-  margin-top:-10em;
+.nieuwstiteldetail {
+    color: black;
+    text-decoration:overline;
+    font-weight: 900;
+    font-size: 8vw;
+    line-height: 1.4em;
+    text-decoration:overline;
+    font-family: 'Abril Fatface', cursive;
 }
+
+.imagesdetail {
+  max-width: 100%;
+}
+
 
 .gepostin {
   color: grey;
   margin-top: 3em;
-  font-size:1vw;
   margin-bottom:5em;
+  font-size: 3vw;
 }
 
 .gepostin a {
   color: black;
   text-decoration: none;
   font-weight: 900;
+  font-size: 3vw;
 }
 
 .gepostin a:hover {
-  color: tomato;
+  color: yellow;
   text-decoration: line-through;
 }
 
-
-
-
-
 .itemsvoor {
-  margin-top:-6em;
-  color: tomato;
+  margin-top:-3em;
+  color: black;
   font-weight: 900;
-  font-size:2vw;
-  float:right;
-
+  font-size:4vw;
 }
-
-
 
 .link a {
   color: black;
   text-decoration: none;
-  font-size:2vw;
+  font-size:2.5vw;
   padding-bottom:3em;
   font-weight:900;
+  text-decoration: underline;
 }
 
 .link a:hover {
-  color: tomato;
+  color: yellow;
   text-decoration: line-through;
 }

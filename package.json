@@ -1,7 +1,7 @@
 {
-  "name": "mobiel-nieuws",
+  "name": "museumsite",
   "version": "1.0.0",
-  "description": "Mobiele nieuwssite",
+  "description": "Museumsite",
   "main": "app.js",
   "directories": {
     "test": "test"

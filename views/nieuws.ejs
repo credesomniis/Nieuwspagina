@@ -1,15 +1,15 @@
 <% include header %>
 
 
-<h1 class="goback"><a href="/">NIEUWS</a></h1>
+<h1 class="goback"><a href="/">MOTI</a></h1>
 
 
 <section>
 
-    <h2 class="nieuwstitel">
-      <a href=/items/<%- item.id %>><%- item.titel %></a>
+    <h2 class="nieuwstiteldetail">
+      <%- item.titel %>
     </h2>
-    <img src="/img/<%- item.afbeeldingl %>" class="images" alt="<%- item.titel %>">
+    <img src="/img/<%- item.afbeeldingl %>" class="imagesdetail" alt="<%- item.titel %>">
 
     <p class="datum"><%- item.datum %></p>
 

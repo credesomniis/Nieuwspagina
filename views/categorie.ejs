@@ -1,14 +1,14 @@
 <% include header %>
 
-<h1 class="goback"><a href="/">NIEUWS</a></h1>
+<h1 class="goback"><a href="/">MOTI</a></h1>
 
-<h2 class="itemsvoor">Nieuwsitems voor categorie <%- categorieen[id] %></h2>
+<h2 class="itemsvoor">Categorie <%- categorieen[id] %></h2>
 
   <% for (var i = 0; i < items.length; i++) { %>
     <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
       <section>
           <h2 class="nieuwstitel">
-            <a href=/items/<%- items[i].id %>><%- items[i].titel %></a>
+            <%- items[i].titel %>
           </h2>
           <img src="/img/<%- items[i].afbeeldings %>" class="images" alt="<%- items[i].titel %>">
           <p class="datum"><%- items[i].datum %></p>
